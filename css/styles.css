@@ -76,3 +76,7 @@ button: focus {
 	float: left;
 	margin: 10px;
 }
+
+.page-footer {
+	clear: both;
+}
