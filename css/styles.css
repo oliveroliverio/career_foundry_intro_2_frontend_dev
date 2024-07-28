@@ -99,6 +99,7 @@ button: focus {
 }
 
 #container div {
+	display: flex;
 	box-sizing: border-box;
 	text-align: center;
 	border: 5px solid blue;
@@ -112,7 +113,4 @@ button: focus {
 	/* flex-grow: 2; */
 }
 #container div:nth-child(3) {
-	flex-shrink: 2;
-	order: -1;
-	/* change order to beginning */
 }
