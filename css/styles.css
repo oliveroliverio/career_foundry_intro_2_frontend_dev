@@ -99,16 +99,15 @@ button: focus {
 }
 
 #container div {
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	box-sizing: border-box;
-	text-align: center;
 	border: 5px solid blue;
 	margin: 10px;
 	min-height: 100px;
 	flex-basis: 500px;
-	/* flex-grow: 1; */
+	flex-grow: 1;
 }
 
 #container div:nth-child(1) {
