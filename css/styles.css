@@ -73,7 +73,7 @@ button: focus {
 }
 
 .profile {
-	max-width: 700px;
+	max-width: 700px; //declaration will keep this “box” from exceeding 700px.
 	margin: 0 auto;
 }
 
