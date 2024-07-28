@@ -95,6 +95,7 @@ button: focus {
 
 #container {
 	width: 100%;
+	display: flex;
 }
 
 #container div {
