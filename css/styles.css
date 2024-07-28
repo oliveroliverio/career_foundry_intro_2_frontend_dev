@@ -80,3 +80,10 @@ button: focus {
 .page-footer {
 	clear: both;
 }
+
+div {
+	margin: 0 auto;
+	border: 5px solid blue;
+	padding: 50px;
+	text-align: center;
+}
