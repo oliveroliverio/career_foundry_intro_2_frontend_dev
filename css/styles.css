@@ -72,24 +72,25 @@ button: focus {
 	background-color: red;
 }
 
+.profile {
+}
+
 .profile__portrait {
 	float: left;
-	margin: 10px;
+	width: 250px;
+	margin-right: 40px;
+	margin-left: 10px;
 }
 
 .page-footer {
 	clear: both;
 }
 
-div {
+/* div {
 	margin: 0 auto;
 	border: 5px solid blue;
 	padding: 50px;
 	text-align: center;
 	width: 50vw;
 	height: 50vh;
-}
-
-.profile {
-	width: 20%;
-}
+} */
