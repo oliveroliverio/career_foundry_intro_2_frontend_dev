@@ -73,7 +73,7 @@ button: focus {
 }
 
 .profile {
-	max-width: 700px; //declaration will keep this “box” from exceeding 700px.
+	max-width: 700px;
 	margin: 0 auto;
 }
 
@@ -82,6 +82,7 @@ button: focus {
 	width: 250px;
 	margin-right: 40px;
 	margin-left: 10px;
+	border-radius: 70%;
 }
 
 .page-footer {
