@@ -101,6 +101,7 @@ button: focus {
 #container div {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	box-sizing: border-box;
 	text-align: center;
 	border: 5px solid blue;
