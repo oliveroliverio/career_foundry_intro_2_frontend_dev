@@ -72,7 +72,7 @@ button: focus {
 	background-color: red;
 }
 
-.profile_portrait {
+.profile__portrait {
 	float: left;
 	margin: 10px;
 }
@@ -88,4 +88,8 @@ div {
 	text-align: center;
 	width: 50vw;
 	height: 50vh;
+}
+
+.profile {
+	width: 20%;
 }
