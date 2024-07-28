@@ -105,7 +105,7 @@ button: focus {
 	margin: 10px;
 	min-height: 100px;
 	flex-basis: 200px;
-	flex-grow: 1;
+	/* flex-grow: 1; */
 }
 
 #container div:nth-child(1) {
