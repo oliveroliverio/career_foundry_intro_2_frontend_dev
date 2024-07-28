@@ -93,11 +93,14 @@ button: focus {
 	margin: 0 auto;
 }
 
-/* div {
-	margin: 0 auto;
-	border: 5px solid blue;
-	padding: 50px;
+#container {
+	width: 100%;
+}
+
+#container div {
+	box-sizing: border-box;
 	text-align: center;
-	width: 50vw;
-	height: 50vh;
-} */
+	border: 5px solid blue;
+	margin: 10px;
+	min-height: 100px;
+}
