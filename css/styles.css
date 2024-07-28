@@ -86,4 +86,6 @@ div {
 	border: 5px solid blue;
 	padding: 50px;
 	text-align: center;
+	width: 50vw;
+	height: 50vh;
 }
