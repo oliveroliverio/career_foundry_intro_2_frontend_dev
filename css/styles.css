@@ -71,3 +71,8 @@ button: active {
 button: focus {
 	background-color: red;
 }
+
+.profile_portrait {
+	float: left;
+	margin: 10px;
+}
