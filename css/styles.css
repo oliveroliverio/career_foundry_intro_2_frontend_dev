@@ -92,6 +92,7 @@ button: focus {
 	clear: both;
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 }
 
 #container {
