@@ -88,6 +88,10 @@ button: focus {
 	border-radius: 50%;
 }
 
+.profile p {
+	flex: 1 1 100px;
+}
+
 .page-footer {
 	clear: both;
 	display: flex;
