@@ -149,5 +149,9 @@ button: focus {
 
 .grid {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px
+}
+.grid__item {
+  background-color: lightgray;
 }
