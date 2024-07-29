@@ -110,8 +110,8 @@ button: focus {
 }
 
 .page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
+	flex-grow: 1;
+	text-align: right;
 }
 
 #container {
