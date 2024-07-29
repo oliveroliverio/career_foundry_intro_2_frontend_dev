@@ -109,6 +109,11 @@ button: focus {
 	flex: 0 1 200px;
 }
 
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
 #container {
 	width: 100%;
 	display: flex;
@@ -130,4 +135,8 @@ button: focus {
 	/* flex-grow: 2; */
 }
 #container div:nth-child(3) {
+}
+
+.navigation-list {
+  list-style-type: none;
 }
