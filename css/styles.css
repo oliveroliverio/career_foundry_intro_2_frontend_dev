@@ -155,3 +155,10 @@ button: focus {
 .grid__item {
   background-color: lightgray;
 }
+
+.grid__item:nth-child(3){
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
