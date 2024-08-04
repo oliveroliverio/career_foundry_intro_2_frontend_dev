@@ -189,6 +189,15 @@ button:focus,
 	}
 }
 
-.sun {
-	animation: 4s color-change infinite alternate linear;
+.logo_OO {
+	animation: 0.5s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
 }
