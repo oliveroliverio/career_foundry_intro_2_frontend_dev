@@ -158,11 +158,15 @@ button: focus {
 	background-color: #abf4f0;
 }
 
-@media all and (min-width: 500px) and (max-width: 950px) {
+@media all and (min-width: 500px) and (max-width: 1024px) {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 10px;
+	}
+	.grid__item:last-child {
+		grid-column: 3 / 3;
+		grid-row: 1 / 5;
 	}
 }
 
@@ -174,10 +178,7 @@ button: focus {
 		grid-gap: 10px;
 		margin: 0;
 	}
-	.grid__item:last-child {
-		grid-column: auto / auto;
-		grid-row: auto / auto;
-	}
+
 	h1 {
 		font-size: 22px;
 	}
