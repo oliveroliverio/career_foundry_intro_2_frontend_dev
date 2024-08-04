@@ -115,14 +115,16 @@ a:focus {
 	margin-right: 15px;
 }
 
-.grid {
-}
-
 .grid__item {
 	border: 2px solid blue;
 	margin: 10px;
 	padding: 10px;
 	background-color: #abf4f0;
+	border-radius: 10px;
+	transition: transform 0.2s ease;
+}
+.grid__item:hover {
+	transform: scale(1.05);
 }
 
 @media all and (min-width: 500px) and (max-width: 1024px) {
