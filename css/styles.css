@@ -1,3 +1,10 @@
 * {
+	margin: 0;
+	padding: 0;
 	box-sizing: borderbox;
+}
+
+body {
+	font-family: 'roboto', sans-serif;
+	background-color: #d9e2e8;
 }
