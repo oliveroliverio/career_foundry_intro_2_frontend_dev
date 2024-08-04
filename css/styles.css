@@ -135,6 +135,9 @@ a:focus {
 		grid-column: auto / auto;
 		grid-row: auto / auto;
 	}
+	h2 {
+		font-size: 24px;
+	}
 }
 
 @media all and (max-width: 500px) {
@@ -146,7 +149,7 @@ a:focus {
 		margin: 0;
 	}
 
-	h1 {
+	h2 {
 		font-size: 22px;
 	}
 }
