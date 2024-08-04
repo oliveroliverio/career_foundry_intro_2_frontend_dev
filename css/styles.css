@@ -13,14 +13,12 @@ body {
 h1 {
 	font-size: 30px;
 	font-weight: 700;
-
 }
 
 h2 {
 	font-size: 24px;
 	font-weight: 700;
 	text-align: center;
-
 }
 
 h3 {
@@ -44,8 +42,6 @@ a:hover {
 a:focus {
 	outline: 4px solid green;
 }
-
-
 
 button {
 	/* overwrites browser defaults and resets the border */
@@ -107,7 +103,7 @@ button: focus {
 .page-header {
 	display: flex;
 	width: 100%;
-	padding; 20px;
+	padding: 20px;
 }
 
 .page-header__item {
@@ -151,7 +147,7 @@ button: focus {
 	margin-left: 15px;
 	margin-right: 15px;
 }
-
+/*
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -168,27 +164,36 @@ button: focus {
 	/* width: 33%; */
 }
 /* end grid fallback */
-
-
-
-
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-	margin: 0
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-
-  }
+*/ @media all and (max-width: 500px) {
+	.grid {
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		margin: 0;
+	}
+	.grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
 }
 
-
+.flex {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
 .box {
-	background: coral
+	background: coral;
+	padding: 20px;
+	max-width: 400px;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.box:last-child {
+	grid-column: 4/4;
+	grid-row: 1/6;
 }
