@@ -13,14 +13,12 @@ body {
 h1 {
 	font-size: 30px;
 	font-weight: 700;
-
 }
 
 h2 {
 	font-size: 24px;
 	font-weight: 700;
 	text-align: center;
-
 }
 
 h3 {
@@ -44,8 +42,6 @@ a:hover {
 a:focus {
 	outline: 4px solid green;
 }
-
-
 
 button {
 	/* overwrites browser defaults and resets the border */
@@ -107,7 +103,7 @@ button: focus {
 .page-header {
 	display: flex;
 	width: 100%;
-	padding; 20px;
+	padding: 20px;
 }
 
 .page-header__item {
@@ -153,37 +149,37 @@ button: focus {
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
-
 }
+
 .grid__item {
-	background-color: lightgray;
+	border: 2px solid blue;
+	margin: 10px;
+	padding: 10px;
+	background-color: #abf4f0;
 }
 
-/* start grid fallback */
-.grid__item {
-	display: inline-block;
-	/* width: 33%; */
+@media all and (min-width: 500px) and (max-width: 950px) {
+	.grid {
+		display: grid;
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+		grid-gap: 10px;
+	}
 }
-/* end grid fallback */
-
-
-
 
 @media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-	margin: 0
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 
-  }
+		grid-gap: 10px;
+		margin: 0;
+	}
+	.grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
 }
