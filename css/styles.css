@@ -161,8 +161,7 @@ button: focus {
 @media all and (min-width: 500px) and (max-width: 950px) {
 	.grid {
 		display: grid;
-		grid-column: auto / auto;
-		grid-row: auto / auto;
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 10px;
 	}
 }
@@ -170,7 +169,7 @@ button: focus {
 @media all and (max-width: 500px) {
 	.grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 
 		grid-gap: 10px;
 		margin: 0;
