@@ -12,11 +12,29 @@ $secondary-color: #abf4f0;
 
 @mixin font-props {
 	font-family: $fontstack;
-	font-weight: 400;
+	font-weight: $font_weight;
 	font-size: 16px;
 	/* Sets the font size to 16px */
 	line-height: 1.6;
 	/* Sets the line-height to 1.6 */
+}
+
+@mixin button-props {
+	/* overwrites browser defaults and resets the border */
+	border: none;
+	display: inline-block;
+	/* takes the font from the outer container */
+	font-family: inherit;
+	/* styles the button */
+	background-color: $secondary-color;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 20px;
+	/* width of the border, type, color */
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	transition-duration: 0.2s;
+	transition-property: opacity;
 }
 
 body {
@@ -150,33 +168,15 @@ a {
 	}
 }
 
-.button,
-button {
-	/* overwrites browser defaults and resets the border */
-	border: none;
-	display: inline-block;
-	/* takes the font from the outer container */
-	font-family: inherit;
-	/* styles the button */
-	background-color: $secondary-color;
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 20px;
-	/* width of the border, type, color */
-	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-	transition-duration: 0.2s;
-	transition-property: opacity;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-	/* lets the mouse appear as a hand when hovering over the button */
-	cursor: pointer;
-	/* reduces the opacity of the button to 80% */
-	opacity: 0.8;
+.button button {
+	@include button-props();
+	&:focus {
+		cursor: pointer;
+		opacity: 0.8;
+	}
+	&__nav {
+		background-color: $primary-color;
+	}
 }
 
 @keyframes color-change {
