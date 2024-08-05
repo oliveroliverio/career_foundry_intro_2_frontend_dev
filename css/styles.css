@@ -201,3 +201,26 @@ button:focus,
 		transform: rotate(180deg);
 	}
 }
+
+.about {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid rgb(255, 0, 208);
+	flex-direction: column;
+}
+
+.table-container {
+	/* justify-content: center;
+	align-items: center; */
+	margin: 0px auto;
+	background-color: #91e2e0;
+	border-radius: 20px;
+	width: 500px;
+}
+
+td {
+	padding: 12px;
+	border-bottom: 1px solid white;
+	text-align: center;
+	width: 100px;
+}
