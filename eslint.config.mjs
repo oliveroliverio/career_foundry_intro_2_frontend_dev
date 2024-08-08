@@ -1,13 +1,8 @@
-import html from '@html-eslint/eslint-plugin'
+import globals from "globals";
+import pluginJs from "@eslint/js";
+
 
 export default [
-	// your own configurations.
-	{
-		// recommended configuration included in the plugin
-		...html.configs['flat/recommended'],
-		files: ['**/*.html'],
-		rules: {
-			indent: 'off',
-		},
-	},
-]
+  {languageOptions: { globals: globals.browser }},
+  pluginJs.configs.recommended,
+];

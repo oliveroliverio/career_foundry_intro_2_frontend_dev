@@ -1,18 +1,10 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 16px;
 	/* Sets the font size to 16px */
 	line-height: 1.6;
@@ -35,6 +27,9 @@ h3 {
 	font-weight: 700;
 }
 
+a:hover {
+	color: orange;
+}
 a:focus {
 	outline: 4px solid green;
 }
@@ -51,62 +46,43 @@ a:focus {
 	border-radius: 50%;
 }
 .profile p {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 100px;
 	flex: 1 1 100px;
 }
 
 .page-footer {
 	clear: both;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	text-align: center;
 }
 
 .page-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	padding: 20px;
 }
 .page-header__item {
-	-webkit-box-flex: 0;
-	-ms-flex: 0 1 200px;
 	flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-	-webkit-box-flex: 1;
-	-ms-flex-positive: 1;
 	flex-grow: 1;
 	text-align: right;
 }
 
 #container {
 	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 #container div {
 	/* display: flex;
   justify-content: center;
   align-items: center; */
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 5px solid blue;
 	margin: 10px;
 	min-height: 100px;
-	-ms-flex-preferred-size: 500px;
 	flex-basis: 500px;
-	-webkit-box-flex: 1;
-	-ms-flex-positive: 1;
 	flex-grow: 1;
 }
 
@@ -123,29 +99,21 @@ a:focus {
 	border: 2px solid blue;
 	margin: 10px;
 	padding: 10px;
-	background-color: #abf4f0;
+	background-color: #088881;
 	border-radius: 10px;
-	-webkit-transition: -webkit-transform 0.2s ease;
-	transition: -webkit-transform 0.2s ease;
-	-o-transition: transform 0.2s ease;
 	transition: transform 0.2s ease;
-	transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .grid__item:hover {
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
 
 @media all and (min-width: 500px) and (max-width: 1024px) {
 	.grid {
-		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 1fr 10px 1fr 10px 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 10px;
 	}
-	.grid__item:last-child {
+	.grid:last-child {
 		grid-column: auto/auto;
 		grid-row: auto/auto;
 	}
@@ -155,9 +123,7 @@ a:focus {
 }
 @media all and (max-width: 500px) {
 	.grid {
-		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 		grid-gap: 10px;
 		margin: 0;
@@ -166,49 +132,29 @@ a:focus {
 		font-size: 22px;
 	}
 }
-.button,
-button {
+.button button {
 	/* overwrites browser defaults and resets the border */
 	border: none;
 	display: inline-block;
 	/* takes the font from the outer container */
 	font-family: inherit;
 	/* styles the button */
-	background-color: #9999ff;
+	background-color: #088881;
 	color: white;
 	text-decoration: none;
 	padding: 10px;
 	border-radius: 20px;
 	/* width of the border, type, color */
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-	-webkit-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
 	transition-duration: 0.2s;
-	-webkit-transition-property: opacity;
-	-o-transition-property: opacity;
 	transition-property: opacity;
 }
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-	/* lets the mouse appear as a hand when hovering over the button */
+.button button:focus {
 	cursor: pointer;
-	/* reduces the opacity of the button to 80% */
 	opacity: 0.8;
 }
-
-@-webkit-keyframes color-change {
-	0% {
-		fill: #edc655;
-	}
-	50% {
-		fill: #fcffad;
-	}
-	100% {
-		fill: #f76414;
-	}
+.button button__nav {
+	background-color: blue;
 }
 
 @keyframes color-change {
@@ -223,40 +169,19 @@ button:focus,
 	}
 }
 .logo_OO {
-	-webkit-animation: 0.5s cloud-move infinite alternate linear;
 	animation: 0.5s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-	from {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	to {
-		-webkit-transform: rotate(180deg);
-		transform: rotate(180deg);
-	}
 }
 
 @keyframes cloud-move {
 	from {
-		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
 	to {
-		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
 	}
 }
 .about {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	border: 2px solid rgb(255, 0, 208);
 	flex-direction: column;
 }
 

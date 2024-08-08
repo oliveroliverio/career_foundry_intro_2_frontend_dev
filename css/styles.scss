@@ -8,7 +8,7 @@ $h3_font_size: 18px;
 $h1_font_size: 30px;
 $font_weight: 700;
 $primary-color: blue;
-$secondary-color: #abf4f0;
+$secondary-color: #088881;
 
 @mixin font-props {
 	font-family: $fontstack;
@@ -145,7 +145,7 @@ a {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 10px;
 	}
-	&:last-child {
+	.grid:last-child {
 		grid-column: auto / auto;
 		grid-row: auto / auto;
 	}
