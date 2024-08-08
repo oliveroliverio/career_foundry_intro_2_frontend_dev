@@ -35,7 +35,7 @@ a {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #088881;
+  background-color: #065450;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -117,7 +117,7 @@ a:focus {
   border: 2px solid blue;
   margin: 10px;
   padding: 10px;
-  background-color: #088881;
+  background-color: #065450;
   border-radius: 10px;
   transition: transform 0.2s ease;
 }
@@ -157,7 +157,7 @@ a:focus {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #088881;
+  background-color: #065450;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -207,7 +207,7 @@ a:focus {
   /* justify-content: center;
   align-items: center; */
   margin: 0px auto;
-  background-color: #36f3e9;
+  background-color: #10e3d8;
   border-radius: 20px;
   width: 500px;
 }
