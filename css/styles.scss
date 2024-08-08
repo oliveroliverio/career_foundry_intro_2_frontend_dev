@@ -58,6 +58,8 @@ h3 {
 }
 
 a {
+	text-decoration: none;
+	@include button-props();
 	&:hover {
 		color: orange;
 	}
